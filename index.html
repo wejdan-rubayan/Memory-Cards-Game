@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عزنا بطبعنا | تحدي الذاكرة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <section id="start-screen" class="screen active">
+
+        <div class="welcome-card">
+             <h1>تحدي الذاكرة <br> - النسخة السعودية-</h1>
+            
+            <p class="welcome-text">
+                أهلاً بك في نسختنا الخاصة,
+                <br>
+                استعرض هويتك واختبر قوة ذاكرتك.
+            </p>
+            <div class="name-input">
+                <span>👤</span>
+                <input type="text" id="player-name" placeholder="اكتب اسمك هنا" maxlength="20">
+            </div>
+            <button id="start-btn" class="main-button">
+                ابدأ التحدي
+                <span>←</span>
+            </button>
+        </div>
+    </section>
+
+    
+    <section id="game-screen" class="screen">
+        <header class="game-header">
+            <div class="game-brand">
+                
+                
+            </div>
+            <h2>أنت قدها</h2>
+            <div class="game-info">
+                <div class="info-box">
+                    <span class="info-icon">👤</span>
+                    <div>
+                        <small>اسم اللاعب</small>
+                        <strong id="display-player">-</strong>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <span class="info-icon">⭐</span>
+                    <div>
+                        <small>النقاط</small>
+                        <strong id="score">0</strong>
+                    </div>
+                </div>
+                <div class="info-box timer-box">
+                    <span class="info-icon">⏱️</span>
+                    <div>
+                        <small>الوقت المتبقي</small>
+                        <strong>
+                            <span id="timer">50</span>
+                            ثانية
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+        <main class="game-container">
+            <div id="game-board" class="game-board"></div>
+            <button id="restart-btn" class="restart-button">↻ إعادة التحدي</button>
+        </main>
+    </section>
+
+   
+    <div id="game-modal" class="modal">
+        <div class="modal-card">
+            <div id="modal-icon" class="modal-icon">🏆</div>
+            <h2 id="modal-title">كفو يا !</h2>
+            <p id="modal-message">وهذا السعودي فوق فووق </p>
+            <button id="modal-restart" class="main-button">إعادة اللعب ↻</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
